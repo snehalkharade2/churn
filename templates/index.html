@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE = edge">
+    <meta name = "viewport" content="width = device-width,initial-scale = 1.0 ">
+</head>    
+<style>
+    body{
+        background-image: url("https://miro.medium.com/max/1400/1*47xx1oXuebvYwZeB0OutuA.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed; background-size: cover;
+        }
+</style>
+<title style="text-align:center;">Prediction on Customer Churn</title>
+
+<h1>Prediction on Customer churn</h1>
+<form method = "POST" action = "/churn_status">
+
+    <label> tenure : </label>
+        <input type = "text" name = "tenure">
+        </select>
+
+    <br>
+    <br>
+
+    <label>Contract :</label>
+        <select name = "Contract">
+            <option value = "Month-to-month">Month-to-month</option>
+            <option value = "One year">One year</option>
+            <option value = "Two year">Two year</option>
+            
+        </select>    
+    <br>
+    <br>
+    
+    <label> PaperlessBilling :</label>
+        <select name = "PaperlessBilling">
+            <option value = "Yes"> Yes </option>
+            <option value = "No"> No </option>
+        </select>
+        
+    <br>
+    <br>
+    
+    <label>PaymentMethod :</label>
+    <select name = "PaymentMethod">
+        <option value = "Electronic check">Electronic check</option>
+        <option value = "Bank transfer (automatic)">Bank transfer (automatic)</option>
+        <option value = "Credit card (automatic)">Credit card (automatic)</option>
+        <option value = "Mailed check  ">Mailed check  </option>    
+    </select>   
+    <br>
+    <br>
+    
+    
+    <label> MonthlyCharges : </label>
+        <input type = "text" name = "MonthlyCharges">
+        </select>
+    <br>
+    <br>
+      
+    <label> TotalCharges : </label>
+        <input type = "text" name = "TotalCharges">
+        </select>
+    <br>
+    <br>
+
+    <label> gender :</label>
+        <select name = "gender">
+            <option value = "Male"> Male</option>
+            <option value = "Female">Female</option>
+        </select>
+
+    <br>
+    <br>
+
+    <label>SeniorCitizen :</label>
+    <select name = "SeniorCitizen">
+        <option value = "0">0</option>
+        <option value = "1">1</option>
+            
+    </select>   
+    <br>
+    <br>
+
+    <label> Partner :</label>
+        <select name = "Partner">
+            <option value = "Yes"> Yes </option>
+            <option value = "No"> No </option>
+        </select>
+        
+    <br>
+    <br>
+
+    <label> Dependents :</label>
+    <select name = "Dependents">
+        <option value = "Yes"> Yes </option>
+        <option value = "No"> No </option>
+    </select>
+    
+    <br>
+    <br>
+    <label> PhoneService :</label>
+        <select name = "PhoneService">
+            <option value = "Yes"> Yes </option>
+            <option value = "No"> No </option>
+        </select>
+        
+    <br>
+    <br>
+    <label> MultipleLines :</label>
+        <select name = "MultipleLines">
+            <option value = "Yes"> Yes </option>
+            <option value = "No"> No </option>
+        </select>
+        
+    <br>
+    <br>
+
+    <label>InternetService :</label>
+        <select name = "InternetService">
+            <option value = "DSL"> DSL </option>
+            <option value = "Fiber optic"> Fiber optic </option>
+            <option value = "No"> No </option>
+            
+        </select>   
+        <br>
+        <br>
+        <label> OnlineSecurity :</label>
+        <select name = "OnlineSecurity">
+            <option value = "Yes"> Yes </option>
+            <option value = "No"> No </option>
+        </select>
+        
+        <br>
+        <br>
+
+        <label> <label> OnlineBackup :</label>
+            <select name = "OnlineBackup">
+                <option value = "Yes"> Yes </option>
+                <option value = "No"> No </option>
+            </select>
+            
+        <br>
+        <br>
+
+        <label> <label> DeviceProtection :</label>
+            <select name = "DeviceProtection">
+                <option value = "Yes"> Yes </option>
+                <option value = "No"> No </option>
+            </select>
+            
+        <br>
+        <br>
+        <label> <label> TechSupport :</label>
+        <select name = "TechSupport">
+            <option value = "Yes"> Yes </option>
+            <option value = "No"> No </option>
+        </select>
+        
+        <br>
+        <br>
+        <label> <label> StreamingTV :</label>
+        <select name = "StreamingTV">
+            <option value = "Yes"> Yes </option>
+            <option value = "No"> No </option>
+        </select>
+        
+        <br>
+        <br>
+        <label> <label> StreamingMovies :</label>
+        <select name = "StreamingMovies">
+            <option value = "Yes"> Yes </option>
+            <option value = "No"> No </option>
+        </select>
+        
+        <br>
+        <br>
+            <input type = "submit" value = "SUBMIT">
+            
+            <br>
+
+                
+            <p>Service to Customer is  <b>{{ prediction }}</b></p>  
+            
+    </form>    
+</body>
+</html>
+
+
+
+    
+
+    
+
+    
+
